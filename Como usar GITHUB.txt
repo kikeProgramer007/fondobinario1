@@ -1,0 +1,67 @@
+COMO SUBIR CODIFIGO A GITHUB
+------------------------------ METODO 1 ----------------------------
+$ git init
+$ git remote add origin https://github.com/kikeProgramer007/pos_inventario.git
+$ git status	(SI MUESTRA ARCHIVOS ROJOS ENTONCES AUN NO SE SUBIO)
+$ git add *  	-->SUBIR TODOS LOS ARCHIVOS
+$ git commit -m "subiendo_archivos"
+$ git status	(SI MUESTRA ARCHIVOS VERDE ENTONCES YA SE SUBIO)
+$ git push origin master -->SUBIR
+------------------------------ METODO 2 (recomendado)----------------------------
+$ git init
+$ git status -->PARA VERIFICAR LO Q SE VA A SUBIR
+$ git add .   -->SELECCIONAR TODO
+$ git status -->PARA VERIFICAR 
+$ git commit -m "first commit"
+$ git config --global user.email xthewonderlanx25996@gmail.com -->(talvez te lo pida)
+$ git config --global user.name kikeProgramer007  -->(talvez te lo pida)
+$ git branch -M main -->SUBIR AL REPOSITORIO
+$ git remote add origin https://github.com/kikeProgramer007/adminLTE_inventario.git
+$ git push -u origin main -->(HACER EFECTIVA EL TRASLADO LOCAL A REMOTO)
+
+------------------------------ ACTUALIZAR M2 ----------------------------
+$ git init
+$ git status -->PARA VERIFICAR LO Q SE VA A SUBIR
+$ git add .   -->SELECCIONAR TODO
+$ git commit -m "Sistema de restaurante"
+$ git push -u origin main -->(HACER EFECTIVA EL TRASLADO LOCAL A REMOTO)
+
+--------------------------- PUBLICAR SITIO WEB (SOLO CSS,HTML)--------------------------
+
+- ES IMPORTANTE CREAR NUESTRO ARCHIVOS README
+- ENTRAMOS A EL REPOSITORIO DE CODIGO
+- CREAMOS UN NUEVO "Branches" CON EL NOMBRE DE "gh-pages"
+- LUEGO DENTRO DE ESTE Branches CREADO NOS DIRIGIMOS A "Settings"
+- BUSCAMO LA OPCION DE "GitHub Pages" 
+- DENTRO DE "GitHub Pages" GENERAMOS NUESTRO "url" DANDO CLIC EN "Check it out here!"
+- Y VEREMOS NUESTRO SITIO:
+  Your site is published at https://kikeprogramer007.github.io/BienesRaices/
+-----------------------(PUBLICAR OPCIONAL)---------------------------
+-(OPCIONAL)SI DESEAMOS IMPLEMENTA UN DOMINIO
+- En GOODADDY:
+- Administración de DNS.
+- Registros.
+- REGISTRAR 5 NUEVOS REGISTROS:
+----------REGISTRO 1----------
+Tipo: A
+Host: @
+Apunta a: 185.199.108.153
+----------REGISTRO 2----------
+Tipo: A
+Host: @
+Apunta a: 185.199.109.153
+----------REGISTRO 3----------
+Tipo: A
+Host: @
+Apunta a: 185.199.110.153
+----------REGISTRO 4----------
+Tipo: A
+Host: @
+Apunta a: 185.199.111.153
+
+----------REGISTRO 5----------
+Tipo: CNAME
+Host: WWW
+Apunta a: kikeprogramer007.github.io
+
+-----------FINALMENTE INSERTAMOS NUESTRO DOMINIO Y ESPERAMOS 1H CON 30MIN
