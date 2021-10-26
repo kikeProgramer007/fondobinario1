@@ -8,4 +8,7 @@
 }
 
 body {background: black;}
-canvas {display:block;}
+canvas {
+  display:block;
+  position: absolute;
+}
